@@ -1,0 +1,257 @@
+:root {
+    --primary-brand: #4D5AE5;
+    /*iris*/
+    --pressed-state: #404BBF;
+    /*ocean*/
+    --dark: #2E2F42;
+    /*navy-blue*/
+    --success: #31D0AA;
+    /*green*/
+    --text-color: #434455;
+    /*slate*/
+    --subtle-text-color: #8E8F99;
+    /*light slate*/
+    --accent-color: #E7E9FC;
+    /*cornflower*/
+    --light: #F4F4FD;
+    /*cloud*/
+    --white-background: #FFFFFF;
+    /*white*/
+    --modal-background: #FCFCFC;
+    /*dairy*/
+
+    --main-font: 'Roboto', sans-serif;
+    --accent-font: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--text-color);
+    background-color: var(--white-background);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/*----Header----*/
+.header {
+    background: var(--white-background);
+}
+
+.header-logo {
+    font-family: var(--accent-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--primary-brand);
+    text-transform: uppercase;
+}
+
+.header-logo-accent {
+    color: var(--dark);
+}
+
+.header-nav-list {
+    font-family: var(--main-font);
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.header-nav-link {
+    color: var(--dark);
+}
+
+.header-nav-link:active,
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-address-list-item:active,
+.header-address-list-item:hover,
+.header-address-list-item:focus {
+    color: var(--pressed-state);
+}
+
+.header-address {
+    font-style: normal;
+}
+
+.header-address-list-item {
+    color: var(--text-color);
+}
+
+/*----1 Main section----*/
+.main-section {
+    background-color: var(--dark);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    color: var(--white-background);
+    letter-spacing: 0.02em;
+}
+
+.main-section-button {
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background: var(--primary-brand);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--white-background);
+    cursor: pointer;
+}
+
+.main-section-button:hover,
+.main-section-button:focus,
+.main-section-button:active {
+    background: var(--pressed-state);
+    cursor: pointer;
+}
+
+/*----2 Section principles----*/
+.principles {
+    background-color: var(--white-background);
+}
+
+.principles-title {
+    color: var(--white-background);
+    letter-spacing: 0.02em;
+}
+
+.principles-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+}
+
+.principles-text {
+    color: var(--text-color);
+}
+
+/*----3 Products section----*/
+.products {
+    background-color: var(--white-background);
+}
+
+.products-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark);
+}
+
+/*----4 Our team section----*/
+.team-section {
+    background-color: var(--light);
+}
+
+.team-section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--dark);
+}
+
+.team-list-item {
+    background: var(--white-background);
+}
+
+.employee-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+}
+
+.position {
+    text-align: center;
+    color: var(--text-color);
+}
+
+/*----Footer----*/
+.footer {
+    background-color: var(--dark);
+}
+
+.footer-link {
+    font-family: var(--accent-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    color: var(--primary-brand);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.footer-logo-accent {
+    color: var(--light);
+}
+
+.footer-text {
+    color: var(--light);
+}
+
+/* ----Portfolio.html---- */
+/* filters section */
+.filter-button {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-brand);
+    background: var(--light);
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+}
+
+.filter-button:active,
+.filter-button:hover,
+.filter-button:focus {
+    background: var(--pressed-state);
+    color: var(--white-background);
+}
+
+/* ----products-portfolio section---- */
+.product-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+}
+
+.product-type {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.products-portfolio-list-item {
+    background: var(--white-background);
+    border: 1px solid var(--accent-color);
+}
