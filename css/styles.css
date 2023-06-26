@@ -44,6 +44,7 @@ body {
 
 .list {
     list-style-type: none;
+    padding: 0;
 }
 
 .link {
@@ -51,7 +52,8 @@ body {
 }
 
 .container {
-    width: 1440px;
+    width: 1128px;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -64,7 +66,6 @@ body {
     border-bottom: 1px solid var(--accent-color);
     flex-shrink: 0;
     margin: 0 auto;
-    width: 1440px;
 }
 
 .header-logo {
@@ -108,6 +109,7 @@ body {
 
 .header-address {
     font-style: normal;
+    margin-left: 332px;
 }
 
 .header-address-list {
@@ -213,6 +215,7 @@ body {
 /*----3 Products section----*/
 .products {
     background-color: var(--white-background);
+    margin-top: 120px;
 }
 
 .products-title {
@@ -223,6 +226,15 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--dark);
+    margin: 0 auto 112px;
+}
+
+.products-list {
+    display: flex;
+}
+
+.products-list-item:not(:first-child) {
+    margin-left: 24px;
 }
 
 /*----4 Our team section----*/
