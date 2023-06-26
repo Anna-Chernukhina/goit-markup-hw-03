@@ -216,6 +216,7 @@ body {
 .products {
     background-color: var(--white-background);
     margin-top: 120px;
+    padding-bottom: 120px;
 }
 
 .products-title {
@@ -233,6 +234,11 @@ body {
     display: flex;
 }
 
+.principles-list-item {
+    display: flex;
+    flex-direction: column;
+}
+
 .products-list-item:not(:first-child) {
     margin-left: 24px;
 }
@@ -240,6 +246,9 @@ body {
 /*----4 Our team section----*/
 .team-section {
     background-color: var(--light);
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: 0 auto;
 }
 
 .team-section-title {
@@ -250,10 +259,19 @@ body {
     text-align: center;
     text-transform: capitalize;
     color: var(--dark);
+    margin-bottom: 72px;
+}
+
+.team-section-list {
+    display: flex;
 }
 
 .team-list-item {
     background: var(--white-background);
+}
+
+.team-list-item:not(:first-child) {
+    margin-left: 24px;
 }
 
 .employee-name {
