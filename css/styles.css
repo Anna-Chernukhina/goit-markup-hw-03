@@ -42,6 +42,10 @@ body {
     letter-spacing: 0.02em;
 }
 
+img {
+    display: block;
+}
+
 .list {
     list-style-type: none;
     padding: 0;
@@ -68,6 +72,15 @@ body {
     margin: 0 auto;
 }
 
+.header-container {
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
 .header-logo {
     font-family: var(--accent-font);
     font-weight: 800;
@@ -76,6 +89,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--primary-brand);
     text-transform: uppercase;
+
+    margin-right: 76px;
     display: inline-flex;
     align-items: center;
     flex-shrink: 0;
@@ -89,19 +104,21 @@ body {
     font-family: var(--main-font);
     font-weight: 500;
     color: var(--dark);
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 40px;
+    display: flex;
+}
+
+.header-nav-list-item:not(:last-child) {
+    margin-right: 40px;
 }
 
 .header-nav-link {
     color: var(--dark);
+    padding: 24px 0;
 }
 
 .header-nav-link:active,
 .header-nav-link:hover,
 .header-nav-link:focus,
-.header-address-list-item:active,
 .header-address-list-item:hover,
 .header-address-list-item:focus {
     color: var(--pressed-state);
@@ -109,23 +126,30 @@ body {
 
 .header-address {
     font-style: normal;
-    margin-left: 332px;
 }
 
 .header-address-list {
     display: flex;
+
 }
 
 .header-address-list-item {
     color: var(--text-color);
 }
 
+.header-address-list-item:not(:last-child) {
+    margin-right: 40px;
+}
+
 /*----1 Main section----*/
 .main-section {
     background-color: var(--dark);
-    display: flex;
-    flex-direction: column;
+    padding: 188px 0;
 }
+
+/* .hero-container {
+
+} */
 
 .title {
     font-weight: 700;
@@ -135,11 +159,7 @@ body {
     color: var(--white-background);
     letter-spacing: 0.02em;
 
-    width: 496px;
-    flex-direction: column;
-    flex-shrink: 0;
-    margin: 0 auto;
-    padding-top: 188px;
+    max-width: 496px;
 }
 
 .main-section-button {
@@ -153,10 +173,11 @@ body {
     color: var(--white-background);
     cursor: pointer;
 
-    /* display: inline-flex; */
-    padding: 16px 32px;
-    width: 177px;
-    margin: 48px auto 188px;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .main-section-button:hover,
