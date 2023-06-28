@@ -56,10 +56,8 @@ img {
 }
 
 .container {
-    width: 1128px;
+    width: 1158px;
     padding: 0 15px;
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -89,11 +87,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--primary-brand);
     text-transform: uppercase;
-
     margin-right: 76px;
-    display: inline-flex;
-    align-items: center;
-    flex-shrink: 0;
 }
 
 .header-logo-accent {
@@ -126,11 +120,11 @@ img {
 
 .header-address {
     font-style: normal;
+    margin-left: 300px;
 }
 
 .header-address-list {
     display: flex;
-
 }
 
 .header-address-list-item {
@@ -158,6 +152,7 @@ img {
     text-align: center;
     color: var(--white-background);
     letter-spacing: 0.02em;
+    margin: 0 auto;
 
     max-width: 496px;
 }
@@ -178,6 +173,7 @@ img {
     height: 56px;
     border: none;
     border-radius: 4px;
+    margin: 48px auto 0;
 }
 
 .main-section-button:hover,
