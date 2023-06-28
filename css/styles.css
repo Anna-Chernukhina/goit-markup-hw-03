@@ -61,7 +61,7 @@ img {
     margin: 0 auto;
 }
 
-/*----Header----*/
+/**----Header----*/
 .header {
     background: var(--white-background);
     display: flex;
@@ -135,15 +135,11 @@ img {
     margin-right: 40px;
 }
 
-/*----1 Main section----*/
+/**----1 Main section----*/
 .main-section {
     background-color: var(--dark);
     padding: 188px 0;
 }
-
-/* .hero-container {
-
-} */
 
 .title {
     font-weight: 700;
@@ -183,11 +179,10 @@ img {
     cursor: pointer;
 }
 
-/*----2 Section principles----*/
+/**----2 Section principles----*/
 .principles {
     background-color: var(--white-background);
-    margin: 120px auto 0;
-    width: 1128px;
+    margin: 120px 0;
 }
 
 .principles-title {
