@@ -61,6 +61,19 @@ img {
     margin: 0 auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /**----Header----*/
 .header {
     background: var(--white-background);
@@ -72,6 +85,9 @@ img {
 
 .header-container {
     display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .header-nav {
@@ -195,11 +211,12 @@ img {
 }
 
 .principles-list-item {
-    width: 264px;
-    display: flex;
+    /*! разобраться!!! */
+    width: calc((100% - 72px) / 4);
+    /* display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 8px; */
 }
 
 .principles-list-item:not(:first-child) {
@@ -212,7 +229,8 @@ img {
     line-height: 1.2;
     letter-spacing: 0.4px;
     color: var(--dark);
-    width: 264px;
+
+    margin-bottom: 8px;
 }
 
 .principles-text {
