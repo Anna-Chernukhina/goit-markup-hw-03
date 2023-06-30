@@ -59,7 +59,6 @@ img {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-
 }
 
 .visually-hidden {
@@ -78,10 +77,7 @@ img {
 /**----Header----*/
 .header {
     background: var(--white-background);
-    display: flex;
     border-bottom: 1px solid var(--accent-color);
-    flex-shrink: 0;
-    margin: 0 auto;
 }
 
 .header-container {
@@ -327,15 +323,7 @@ img {
     padding: 100px 0;
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    width: 264px;
-    margin-left: 0;
-}
-
 .footer-link {
-    display: inline-block;
     font-family: var(--accent-font);
     font-weight: 800;
     font-size: 18px;
@@ -343,6 +331,8 @@ img {
     color: var(--primary-brand);
     text-transform: uppercase;
     letter-spacing: 0.03em;
+
+    display: inline-block;
     margin-bottom: 16px;
 }
 
@@ -352,9 +342,10 @@ img {
 
 .footer-text {
     color: var(--light);
+    max-width: 264px;
 }
 
-/* ----Portfolio.html---- */
+/** ----Portfolio.html---- */
 .products-portfolio {
     padding: 96px 0 120px 0;
 }
@@ -364,10 +355,6 @@ img {
     justify-content: center;
     margin-bottom: 72px;
 }
-
-/* .filters-list-item {
-    margin-bottom: 72px;
-} */
 
 .filters-list-item:not(:last-child) {
     margin-right: 24px;
@@ -399,6 +386,19 @@ img {
 }
 
 /* ----products-portfolio section---- */
+.products-portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.products-portfolio-list-item {
+    background: var(--white-background);
+    border: 1px solid var(--accent-color);
+    width: calc((100% - 48px) / 3);
+}
+
 .products-li-container {
     padding: 32px 16px;
     border: 1px solid var(--accent-color);
@@ -419,17 +419,4 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-}
-
-.products-portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-}
-
-.products-portfolio-list-item {
-    background: var(--white-background);
-    border: 1px solid var(--accent-color);
-    width: calc((100% - 48px) / 3);
 }
