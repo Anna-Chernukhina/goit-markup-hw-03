@@ -82,9 +82,11 @@ img {
 
 .header-container {
     display: flex;
-    align-items: center;
+    margin: 0 auto;
+    /* align-items: center;
+
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 24px; */
 }
 
 .header-nav {
