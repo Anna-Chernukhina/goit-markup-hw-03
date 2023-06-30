@@ -398,7 +398,6 @@ img {
 
 .products-portfolio-list-item {
     background: var(--white-background);
-    border: 1px solid var(--accent-color);
     width: calc((100% - 48px) / 3);
 }
 
